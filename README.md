@@ -1,14 +1,15 @@
-# Arena
+# ooerrace
 
 A night circuit, on the game path of
 [artshape-render](https://github.com/onion2k/artshape-render): drive a truck
 round a lit track over rolling ground against three others, and try to take a
 second off your best lap.
 
-It was an arena shooter until the driving turned out to be the more
-interesting half. The drones, the gun and the score are gone; the vehicle they
-were standing on — suspension, tyres, and a floor with hills in it — is the
-whole game now.
+It was an arena shooter called `arena` until the driving turned out to be the
+more interesting half. The drones, the gun and the score are gone; the vehicle
+they were standing on — suspension, tyres, and a floor with hills in it — is
+the whole game now. The play area is still called the arena throughout, which
+is what the word means here now.
 
 ![the circuit](docs/arena.png)
 

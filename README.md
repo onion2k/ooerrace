@@ -2302,6 +2302,22 @@ wall-clock between `requestAnimationFrame` callbacks, and a tab the browser is
 not compositing stops calling back — which shows up as a scene that
 mysteriously got four times slower while the GPU was doing the same work.
 
+### Before any of it: the spike
+
+The numbers above are this game measured. The ones that decided how it is
+drawn came first, from a throwaway project that measured what a game on
+`artshape-render` would cost before there was a game — the still life's
+shader at 11 ms a megapixel against a lean one at under 0.1, eight thousand
+movers for under 3 ms, sixteen screen-filling layers of effects for half a
+millisecond, and a couple of hundred dynamic lights comfortable where two
+thousand is not. That is where the library's game path came from, and why it
+culls lights by radius and uploads a group's matrices in one write.
+
+The spike is gone; its record is kept here as
+[docs/spike-results.md](docs/spike-results.md). Worth reading before
+measuring anything: six of its figures were confident and wrong before they
+were caught, and three had no symptom but plausibility.
+
 ## Layout
 
 | file | |
